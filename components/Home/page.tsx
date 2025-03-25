@@ -127,7 +127,7 @@ const Home = () => {
           />
 
           {/* Control Buttons */}
-          <Group position="center" spacing="xs" mt="xs">
+          <Group justify="center" gap="xs" mt="xs">
             <Button variant="outline" size="xs" color="gray" onClick={resetAll}>
               Reset All
             </Button>
@@ -140,8 +140,8 @@ const Home = () => {
           </Group>
 
           {/* Foreground Color Swatches */}
-          <Group position="center" spacing="xs" mt="sm">
-            <Text size="sm" weight={500}>FG</Text>
+          <Group justify="center" gap="xs" mt="sm">
+            <Text size="sm" fw={500}>FG</Text>
             {fgColors.map((color) => (
               <ActionIcon
                 key={color.hex}
@@ -152,8 +152,8 @@ const Home = () => {
           </Group>
 
           {/* Background Color Swatches */}
-          <Group position="center" spacing="xs" mt="xs">
-            <Text size="sm" weight={500}>BG</Text>
+          <Group justify="center" gap="xs" mt="xs">
+            <Text size="sm" fw={500}>BG</Text>
             {bgColors.map((color) => (
               <ActionIcon
                 key={color.hex}
