@@ -106,7 +106,7 @@ const Home = () => {
             Source Code
           </Title>
           <Text size="lg" c="dimmed" p={5} className={classes.description}>
-            This app runs entirely in your browser and the source code is freely available on GitHub. Shout out to kkrypt0nn for this guide.
+            This app runs entirely in your browser and the source code is freely available on <a href="https://github.com/sreehhari/discord_colored_text"> GitHub</a>. Shout out to kkrypt0nn for <a href="https://gist.github.com/kkrypt0nn/a02506f3712ff2d1c8ca7c9e0aed7c06">this guide</a>.
           </Text>
         </Container>
 
