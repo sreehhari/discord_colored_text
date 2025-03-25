@@ -10,6 +10,7 @@ import {
   Stack,
   Group,
   ActionIcon,
+  Tooltip,
 } from '@mantine/core';
 import Ansi from 'ansi-to-html';
 import classes from './Hero-text.module.css';
@@ -143,11 +144,13 @@ const Home = () => {
           <Group justify="center" gap="xs" mt="sm">
             <Text size="sm" fw={500}>FG</Text>
             {fgColors.map((color) => (
+              <Tooltip key={color.hex} label={color.hex} position='top'>
               <ActionIcon
                 key={color.hex}
                 style={{ backgroundColor: color.hex, width: 24, height: 24 }}
                 onClick={() => setFontColor(color.ansi)}
               />
+              </Tooltip>
             ))}
           </Group>
 
@@ -155,11 +158,13 @@ const Home = () => {
           <Group justify="center" gap="xs" mt="xs">
             <Text size="sm" fw={500}>BG</Text>
             {bgColors.map((color) => (
+              <Tooltip key={color.hex} label={color.hex} position='top'>
               <ActionIcon
                 key={color.hex}
                 style={{ backgroundColor: color.hex, width: 24, height: 24 }}
                 onClick={() => setBgColor(color.ansi)}
               />
+              </Tooltip>
             ))}
           </Group>
 
